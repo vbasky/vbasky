@@ -1,9 +1,6 @@
-### Hi there 👋
+### Hello 👋
 
-<!--
-**vbasky/vbasky** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
+## Something about me
 
 - 🔭 I’m currently working on ... Roku implementation of TMDB App
 - 🌱 I’m currently learning ... Laravel for a sweet little personal project of mine
@@ -11,4 +8,3 @@ Here are some ideas to get you started:
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about ... Video Streaming and associated technologies such as DASH, HLS, LL-HLS
 - 📫 How to reach me: ... @vikrambhaskar on Twitter
--->
