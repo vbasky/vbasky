@@ -1,27 +1,39 @@
-
 <h1 align="center">Hi 👋, I'm Vikram</h1>
 <h3 align="center">Video technologist · Encoding & streaming engineer · Rust & cloud infrastructure</h3>
 
-I build video infrastructure — from encoding optimizers and media metadata tooling to distributed video platforms and cloud media pipelines.
+<p align="center">I build video infrastructure in Rust — encoding optimizers, media metadata tooling, and the cloud pipelines that move it all.</p>
 
 ---
 
-### 🔭 What I'm building
+## 🚀 Featured Projects
 
-**📹 [viser](https://github.com/vbasky/viser) — Video Encoding Optimizer**  
-Multi-codec convex-hull optimization pipeline that computes per-content bitrate ladders from CRF sweep trial data. Combines shot detection, complexity analysis, and per-title/per-shot/per-segment/per-device encoding strategies to minimize bitrate at any quality target. Ships BD-Rate computation, VMAF measurement, fixed-ladder comparison, chart rendering, and a browser-based comparison player. 15 workspace crates, H.264/H.265/AV1.
+### 🎬 [viser](https://github.com/vbasky/viser) — Video Encoding Optimizer
+A multi-codec **convex-hull optimization pipeline** that computes per-content bitrate ladders from CRF sweep trial data. It combines shot detection and complexity analysis to drive per-title, per-shot, per-segment, and per-device encoding strategies — minimizing bitrate at any quality target.
 
-**🦀 [revelo](https://github.com/vbasky/revelo) — Pure-Rust MediaInfoLib Port**  
-Reads technical and tag metadata from 177+ audio, video, image, and container formats. Drop-in `libmediainfo` replacement with CLI, C ABI, Homebrew support, and byte-for-byte differential testing against the MediaInfo oracle. Covers AAC, AC-3, AVI, AV1, BPG, CineForm, DTS, DV, FLAC, H.263, JPEG, MPEG, MP4/MOV, Matroska, MPEG-PS/TS, Ogg, Opus, PNG, ProRes, VC-1, VP8/9, WebP, WAV, and more.
+> Ships BD-Rate computation, VMAF measurement, fixed-ladder comparison, chart rendering, and a browser-based comparison player.
+>
+> **15 workspace crates · H.264 / H.265 / AV1 · Rust**
 
-**🗄️ [somnia](https://github.com/vbasky/somnia) - Type safe SurrealDB ORM for Rust**
-A type-safe SurrealDB ORM for Rust — a typed query builder, a #[derive(SurrealRecord)] macro, schema generation, and Diesel-style migrations.
+### 🔎 [revelo](https://github.com/vbasky/revelo) — Pure-Rust MediaInfoLib Port
+A safe, fast port of MediaInfoLib that reads technical and tag metadata from **177+ audio, video, image, and container formats**. A drop-in `libmediainfo` replacement (C ABI + CLI), differential-tested byte-for-byte against the MediaInfo oracle.
 
-**⚡ [azure-rust-functions](https://github.com/vbasky/azure-rust-functions)** — Azure Functions in Rust
+> AAC · AC-3 · AVI · AV1 · BPG · CineForm · DTS · DV · FLAC · H.263 · JPEG · MPEG · MP4/MOV · Matroska · MPEG-PS/TS · Ogg · Opus · PNG · ProRes · VC-1 · VP8/9 · WebP · WAV · and more
+>
+> 🍺 `brew install vbasky/revelo/revelo`
+
+### 🗄️ [somnia](https://github.com/vbasky/somnia) — Type-safe SurrealDB ORM for Rust
+A typed query builder, a `#[derive(SurrealRecord)]` macro, schema generation, and Diesel-style migrations — bringing compile-time safety to SurrealDB.
+
+> 🍺 `brew install vbasky/somnia/somnia`
+
+### ⚡ [azure-rust-functions](https://github.com/vbasky/azure-rust-functions) — Azure Functions in Rust
+A working pattern for running Azure Functions on the Rust custom-handler runtime.
+
+<sub>Also: <a href="https://github.com/vbasky/sublime-vscode-plus">sublime-vscode-plus</a> — a VS Code colour scheme for Sublime Text (⭐ 45).</sub>
 
 ---
 
-### 💼 Professional experience
+## 💼 Professional experience
 
 | Area | Technologies |
 |------|-------------|
@@ -82,6 +94,7 @@ A type-safe SurrealDB ORM for Rust — a typed query builder, a #[derive(Surreal
 
 ![Mysql](https://img.shields.io/badge/-Mysql-00758F?logo=Mysql&logoColor=white&style=flat)
 ![SqlServer](https://img.shields.io/badge/-SqlServer-B71D1C?logo=microsoft-sql-server&logoColor=white&style=flat)
+![SurrealDB](https://img.shields.io/badge/-SurrealDB-FF00A0?logo=surrealdb&logoColor=white&style=flat)
 
 ### Platforms
 
