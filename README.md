@@ -26,10 +26,13 @@ A typed query builder, a `#[derive(SurrealRecord)]` macro, schema generation, an
 
 > 🍺 `brew install vbasky/somnia/somnia`
 
+### 🎨 [sublime-vscode-plus](https://github.com/vbasky/sublime-vscode-plus) — VS Code Colour Scheme for Sublime Text
+Brings VS Code's **Dark+** and **Light+** syntax highlighting to Sublime Text. Installable via Package Control and tested across PHP, JavaScript/Vue, Python, HTML/Blade, CSS/Sass/SCSS/Less, JSON, XML, Markdown, and YAML.
+
+> ⭐ **45 stars** — my most-starred project
+
 ### ⚡ [azure-rust-functions](https://github.com/vbasky/azure-rust-functions) — Azure Functions in Rust
 A working pattern for running Azure Functions on the Rust custom-handler runtime.
-
-<sub>Also: <a href="https://github.com/vbasky/sublime-vscode-plus">sublime-vscode-plus</a> — a VS Code colour scheme for Sublime Text (⭐ 45).</sub>
 
 ---
 
@@ -94,7 +97,7 @@ A working pattern for running Azure Functions on the Rust custom-handler runtime
 
 ![Mysql](https://img.shields.io/badge/-Mysql-00758F?logo=Mysql&logoColor=white&style=flat)
 ![SqlServer](https://img.shields.io/badge/-SqlServer-B71D1C?logo=microsoft-sql-server&logoColor=white&style=flat)
-![SurrealDB](https://img.shields.io/badge/-SurrealDB-FF00A0?logo=surrealdb&logoColor=white&style=flat)
+![SurrealDB](https://img.shields.io/badge/SurrealDB-FF00A0?style=flat&logo=data:image/svg%2Bxml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+U3VycmVhbERCPC90aXRsZT48cGF0aCBkPSJtMTIgNi4zMTQgNS43MTQgMy4xNjV2LTEuMjdMMTIgNS4wNTRjLS44NS40Ny00Ljk1NyAyLjc0LTUuNzE0IDMuMTU3LjcwMy4zOSA4LjA4NSA0LjQ2NyAxMi41NzIgNi45NDZ2MS4yNjRMMTIgMjAuMjA5Yy0xLjcxLS45NDMtNS4xNS0yLjg0NC02Ljg1OC0zLjc5di0zLjc4OEwxMiAxNi40MmwxLjE0NC0uNjMyLTkuMTQ2LTUuMDV2Ni4zMTZMMTIgMjEuNDcybDgtNC40MnYtMi41MjZMOC41NyA4LjIxWm0tOC4wMDIuNjMydjIuNTI4bDExLjQyOCA2LjMxNi0zLjQyOCAxLjg5Ni01LjcxNC0zLjE2NXYxLjI3bDUuNzE0IDMuMTU2Yy44NS0uNDcgNC45NTctMi43NCA1LjcxNC0zLjE1Ny0uNzAzLS4zOS04LjA4My00LjQ2Ny0xMi41Ny02Ljk0OFY3LjU3OEwxMiAzLjc4OWMxLjcwNy45NDUgNS4xNDggMi44NDYgNi44NTggMy43ODl2My43ODlMMTIgNy41NzdsLTEuMTQ0LjYzM0wyMCAxMy4yNjNWNi45NDZMMTIgMi41MjZjLS43OTEuNDM4LTcuNDE2IDQuMS04LjAwMiA0LjQyek0xMiAwIDEuNzEzIDUuNjg1djEyLjYzTDEyIDI0bDEwLjI4Ny01LjY4MlY1LjY4NVptOS4xNCAxNy42ODNMMTIgMjIuNzM2bC05LjE0My01LjA1M1Y2LjMxN0wxMiAxLjI2NGw5LjE0MyA1LjA1M3oiLz48L3N2Zz4=)
 
 ### Platforms
 
