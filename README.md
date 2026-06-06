@@ -14,6 +14,9 @@ Multi-codec convex-hull optimization pipeline that computes per-content bitrate 
 **🦀 [revelo](https://github.com/vbasky/revelo) — Pure-Rust MediaInfoLib Port**  
 Reads technical and tag metadata from 177+ audio, video, image, and container formats. Drop-in `libmediainfo` replacement with CLI, C ABI, Homebrew support, and byte-for-byte differential testing against the MediaInfo oracle. Covers AAC, AC-3, AVI, AV1, BPG, CineForm, DTS, DV, FLAC, H.263, JPEG, MPEG, MP4/MOV, Matroska, MPEG-PS/TS, Ogg, Opus, PNG, ProRes, VC-1, VP8/9, WebP, WAV, and more.
 
+**🦀 [somnia](https://github.com/vbasky/somnia) - Type safe SurrealDB ORM for Rust**
+A type-safe SurrealDB ORM for Rust — a typed query builder, a #[derive(SurrealRecord)] macro, schema generation, and Diesel-style migrations.
+
 **⚡ [azure-rust-functions](https://github.com/vbasky/azure-rust-functions)** — Azure Functions in Rust
 
 ---
