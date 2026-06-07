@@ -31,6 +31,11 @@ Brings VS Code's **Dark+** and **Light+** syntax highlighting to Sublime Text. I
 
 > ⭐ **45 stars** — my most-starred project
 
+### 📓 [patina](https://github.com/vbasky/patina) — Rust-native Interactive Notebook
+A Rust-native interactive notebook with kernel support for **Rust**, **Python**, and **JavaScript**. The entire stack — web server, kernels, wire protocol, and JavaScript engine — is written in Rust. No Jupyter, no external kernel plumbing.
+
+> Rust (evcxr) · Python (pyo3/CPython) · JavaScript (boa) · React UI · Axum
+
 ### ⚡ [azure-rust-functions](https://github.com/vbasky/azure-rust-functions) — Azure Functions in Rust
 A working pattern for running Azure Functions on the Rust custom-handler runtime.
 
