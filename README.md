@@ -14,6 +14,8 @@ A multi-codec **convex-hull optimization pipeline** that computes per-content bi
 >
 > **15 workspace crates · H.264 / H.265 / AV1 · Rust**
 
+📖 **[Measure, Don't Guess: Building viser →](https://medium.com/@vbasky/measure-dont-guess-building-viser-a-content-adaptive-video-encoding-optimizer-in-rust-7675edd6943a)**
+
 ### 🎧 [cathar](https://github.com/vbasky/cathar) — Audio Restoration Toolkit (Pure Rust)
 An audio toolkit for any recording that **restores** (denoise, de-hum, de-click, de-clip, de-reverb), **enhances** (de-ess, breath removal, voice isolation, bandwidth extension), and **levels** (LUFS + peak normalisation) — writing a clean 32-bit float WAV. Works on standalone audio (WAV, MP3, FLAC, OGG, M4A) or the audio track inside a video; video is never required.
 
@@ -35,10 +37,14 @@ A safe, fast port of MediaInfoLib that reads technical and tag metadata from **1
 >
 > 🍺 `brew install vbasky/revelo/revelo`
 
+📖 **[Porting 300K lines of C++/Perl to Rust: a byte-identical MediaInfo replacement →](https://medium.com/@vbasky/porting-200-000-lines-of-c-to-rust-building-a-byte-identical-mediainfo-replacement-8e9b587d469a)**
+
 ### 🗄️ [somnia](https://github.com/vbasky/somnia) — Type-safe SurrealDB ORM for Rust
 A typed query builder, a `#[derive(SurrealRecord)]` macro, schema generation, and Diesel-style migrations — bringing compile-time safety to SurrealDB.
 
 > 🍺 `brew install vbasky/somnia/somnia`
+
+📖 **[A Type-Safe ORM for SurrealDB That Feels Like Diesel →](https://medium.com/@vbasky/somnia-a-type-safe-orm-for-surrealdb-that-feels-like-diesel-7341d49bd5c4)**
 
 ### 🎨 [sublime-vscode-plus](https://github.com/vbasky/sublime-vscode-plus) — VS Code Colour Scheme for Sublime Text
 Brings VS Code's **Dark+** and **Light+** syntax highlighting to Sublime Text. Installable via Package Control and tested across PHP, JavaScript/Vue, Python, HTML/Blade, CSS/Sass/SCSS/Less, JSON, XML, Markdown, and YAML.
@@ -49,9 +55,6 @@ Brings VS Code's **Dark+** and **Light+** syntax highlighting to Sublime Text. I
 A Rust-native interactive notebook with kernel support for **Rust**, **Python**, and **JavaScript**. The entire stack — web server, kernels, wire protocol, and JavaScript engine — is written in Rust. No Jupyter, no external kernel plumbing.
 
 > Rust (evcxr) · Python (pyo3/CPython) · JavaScript (boa) · React UI · Axum
-
-### ⚡ [azure-rust-functions](https://github.com/vbasky/azure-rust-functions) — Azure Functions in Rust
-A working pattern for running Azure Functions on the Rust custom-handler runtime.
 
 ---
 
