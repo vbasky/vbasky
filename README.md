@@ -23,6 +23,8 @@ An audio toolkit for any recording that **restores** (denoise, de-hum, de-click,
 >
 > **Pure Rust · single `cargo build` · MSRV 1.85 / edition 2024**
 
+📖 **[Catharsis for Noisy Audio →](https://medium.com/@vbasky/catharsis-for-noisy-audio-a-pure-rust-restoration-toolkit-with-no-ffmpeg-and-no-black-boxes-a6c5c38e4c14?postPublishedType=repub)
+
 ### 🖼️ [eligo](https://github.com/vbasky/eligo) — Best-of-N Image Selection (Pure Rust)
 Image generators are random — eligo automates picking the best output. Give it a prompt and it **generates** `n` candidates (a pluggable `Backend`), **scores** each against the prompt (a pluggable `Scorer`), and **selects** the highest-scoring one. The smallest honest **agentic** loop: a numeric reward drives a decision.
 
