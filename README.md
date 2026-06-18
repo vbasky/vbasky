@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Vikram</h1>
 <h3 align="center">Engineering Manager · Video Streaming & Encoding · Rust & Cloud Infrastructure</h3>
 
-<p align="center">Engineering manager with nearly two decades in media & streaming. I build video infrastructure in Rust — encoding optimizers, media metadata tooling, and the cloud pipelines that move it all.</p>
+<p align="center">Engineering manager with nearly two decades in media & streaming. I own the end-to-end Media & Digital Infrastructure for the NRL and its 16 clubs — live ingest, encoding, MAM, CDN, CMS, apps, identity and the data/ad stack — and I build video infrastructure in Rust on the side: encoding optimizers, media metadata tooling, and the cloud pipelines that move it all.</p>
 
 ---
 
@@ -59,7 +59,7 @@ A working pattern for running Azure Functions on the Rust custom-handler runtime
 
 | Role | Where | When |
 |------|-------|------|
-| **Engineering Manager** | [National Rugby League](https://www.nrl.com) — built [NRL Studio](https://studio.nrl.com) live streaming for 16 clubs, migrated 130K VOD assets to Shaka Packager, integrated Bitmovin encoding into Dalet Flex VMS, automated video-AI highlights | 2021–present |
+| **Engineering Manager** | [National Rugby League](https://www.nrl.com) — own the **end-to-end Media & Digital Infrastructure** for the NRL + 16 clubs: live ingest & encoding (AWS Elemental, Azure, Bitmovin), MAM/DAM (Dalet Flex), CDN (Akamai/Fastly), CMS (Optimizely), web & mobile apps, NRL ID, subscriptions, fantasy/tipping, ad stack (Google DFP) and CRM/marketing (Salesforce, Braze). Built [NRL Studio](https://studio.nrl.com), migrated 130K VOD assets to Shaka Packager, automated video-AI highlights | 2021–present |
 | **Senior Full Stack Video Engineer** | Kintell — WebRTC video conferencing & Twilio-based recording compositions | 2020–2021 |
 | **TV Platform Lead** | Stan — connected-TV VOD apps (Smart TVs, PlayStation), Preact/TS, EME/PlayReady DRM | 2020 |
 | **OTT Video Engineer** | SBS — launched SBS On Demand 2.0 on Telstra TV (Brightscript), Google DAI, CI/CD | 2018–2020 |
