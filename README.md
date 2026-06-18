@@ -63,7 +63,7 @@ A Rust-native interactive notebook with kernel support for **Rust**, **Python**,
 | Role | Where | When |
 |------|-------|------|
 | **Engineering Manager** | [National Rugby League](https://www.nrl.com) — own the **end-to-end Media & Digital Infrastructure** for the NRL + 16 clubs: live ingest & encoding (AWS Elemental, Azure, Bitmovin), MAM/DAM (Dalet Flex), CDN (Akamai/Fastly), CMS (Optimizely), web & mobile apps, NRL ID, subscriptions, fantasy/tipping, ad stack (Google DFP) and CRM/marketing (Salesforce, Braze). Hands-on across the codebases: Dalet Flex automation (Groovy), Azure C#/.NET integration services driving Flex, and the NRL.com app (C#/.NET). Built [NRL Studio](https://studio.nrl.com), migrated 130K VOD assets to Shaka Packager, automated video-AI highlights | 2021–present |
-| **Senior Full Stack Video Engineer** | Kintell — WebRTC video conferencing & Twilio-based recording compositions | 2020–2021 |
+| **Lead Video Engineer** | Kintell — WebRTC video conferencing & Twilio-based recording compositions | 2020–2021 |
 | **TV Platform Lead** | Stan — connected-TV VOD apps (Smart TVs, PlayStation), Preact/TS, EME/PlayReady DRM | 2020 |
 | **OTT Video Engineer** | SBS — launched SBS On Demand 2.0 on Telstra TV (Brightscript), Google DAI, CI/CD | 2018–2020 |
 | **Application Architect** | Switch Media — media player & Chromecast/PS4 apps for Foxtel; DRM, ABR, analytics | 2017–2018 |
