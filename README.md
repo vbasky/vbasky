@@ -14,6 +14,20 @@ A multi-codec **convex-hull optimization pipeline** that computes per-content bi
 >
 > **15 workspace crates · H.264 / H.265 / AV1 · Rust**
 
+### 🎧 [cathar](https://github.com/vbasky/cathar) — Audio Restoration Toolkit (Pure Rust)
+An audio toolkit for any recording that **restores** (denoise, de-hum, de-click, de-clip, de-reverb), **enhances** (de-ess, breath removal, voice isolation, bandwidth extension), and **levels** (LUFS + peak normalisation) — writing a clean 32-bit float WAV. Works on standalone audio (WAV, MP3, FLAC, OGG, M4A) or the audio track inside a video; video is never required.
+
+> No ffmpeg, no C/C++, no system libraries — decoding via `symphonia`, FFT via `realfft`/`rustfft`. Every effect is a plain function over `&[f32]`, so the pipeline drops straight into any Rust program.
+>
+> **Pure Rust · single `cargo build` · MSRV 1.85 / edition 2024**
+
+### 🖼️ [eligo](https://github.com/vbasky/eligo) — Best-of-N Image Selection (Pure Rust)
+Image generators are random — eligo automates picking the best output. Give it a prompt and it **generates** `n` candidates (a pluggable `Backend`), **scores** each against the prompt (a pluggable `Scorer`), and **selects** the highest-scoring one. The smallest honest **agentic** loop: a numeric reward drives a decision.
+
+> Ships a Stable Diffusion backend on ONNX Runtime, a CLIP prompt-alignment scorer, no-reference quality scoring, and image-similarity search — with a bounded single re-roll of the worst candidate.
+>
+> **Pure Rust · ONNX Runtime · CLIP · Stable Diffusion**
+
 ### 🔎 [revelo](https://github.com/vbasky/revelo) — Pure-Rust MediaInfoLib Port
 A safe, fast port of MediaInfoLib that reads technical and tag metadata from **177+ audio, video, image, and container formats**. A drop-in `libmediainfo` replacement (C ABI + CLI), differential-tested byte-for-byte against the MediaInfo oracle.
 
