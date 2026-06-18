@@ -59,7 +59,7 @@ A working pattern for running Azure Functions on the Rust custom-handler runtime
 
 | Role | Where | When |
 |------|-------|------|
-| **Engineering Manager** | [National Rugby League](https://www.nrl.com) — own the **end-to-end Media & Digital Infrastructure** for the NRL + 16 clubs: live ingest & encoding (AWS Elemental, Azure, Bitmovin), MAM/DAM (Dalet Flex), CDN (Akamai/Fastly), CMS (Optimizely), web & mobile apps, NRL ID, subscriptions, fantasy/tipping, ad stack (Google DFP) and CRM/marketing (Salesforce, Braze). Built [NRL Studio](https://studio.nrl.com), migrated 130K VOD assets to Shaka Packager, automated video-AI highlights | 2021–present |
+| **Engineering Manager** | [National Rugby League](https://www.nrl.com) — own the **end-to-end Media & Digital Infrastructure** for the NRL + 16 clubs: live ingest & encoding (AWS Elemental, Azure, Bitmovin), MAM/DAM (Dalet Flex), CDN (Akamai/Fastly), CMS (Optimizely), web & mobile apps, NRL ID, subscriptions, fantasy/tipping, ad stack (Google DFP) and CRM/marketing (Salesforce, Braze). Hands-on across the codebases: Dalet Flex automation (Groovy), Azure C#/.NET integration services driving Flex, and the NRL.com app (C#/.NET). Built [NRL Studio](https://studio.nrl.com), migrated 130K VOD assets to Shaka Packager, automated video-AI highlights | 2021–present |
 | **Senior Full Stack Video Engineer** | Kintell — WebRTC video conferencing & Twilio-based recording compositions | 2020–2021 |
 | **TV Platform Lead** | Stan — connected-TV VOD apps (Smart TVs, PlayStation), Preact/TS, EME/PlayReady DRM | 2020 |
 | **OTT Video Engineer** | SBS — launched SBS On Demand 2.0 on Telstra TV (Brightscript), Google DAI, CI/CD | 2018–2020 |
@@ -77,7 +77,7 @@ A working pattern for running Azure Functions on the Rust custom-handler runtime
 | **Cloud media (Azure)** | Azure AI, AKS, Azure Functions, App Service, Event Hubs, Service Bus, Storage, Cosmos DB |
 | **Video encoding** | H.264/AVC, H.265/HEVC, AV1, VP9, per-title optimization, quality metrics (VMAF, PSNR, SSIM, BD-Rate) |
 | **Infrastructure** | Docker, Kubernetes, Terraform, CI/CD, monitoring, cost optimization |
-| **Software** | Rust, C#/.NET, Java, TypeScript, JavaScript, Laravel |
+| **Software** | Rust, C#/.NET, Groovy, Java, TypeScript, JavaScript, Laravel |
 
 ---
 
