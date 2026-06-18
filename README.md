@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Vikram</h1>
-<h3 align="center">Video technologist · Encoding & streaming engineer · Rust & cloud infrastructure</h3>
+<h3 align="center">Engineering Manager · Video Streaming & Encoding · Rust & Cloud Infrastructure</h3>
 
-<p align="center">I build video infrastructure in Rust — encoding optimizers, media metadata tooling, and the cloud pipelines that move it all.</p>
+<p align="center">Engineering manager with nearly two decades in media & streaming. I build video infrastructure in Rust — encoding optimizers, media metadata tooling, and the cloud pipelines that move it all.</p>
 
 ---
 
@@ -55,7 +55,20 @@ A working pattern for running Azure Functions on the Rust custom-handler runtime
 
 ---
 
-## 💼 Professional experience
+## 💼 Career
+
+| Role | Where | When |
+|------|-------|------|
+| **Engineering Manager** | [National Rugby League](https://www.nrl.com) — built [NRL Studio](https://studio.nrl.com) live streaming for 16 clubs, migrated 130K VOD assets to Shaka Packager, integrated Bitmovin encoding into Dalet Flex VMS, automated video-AI highlights | 2021–present |
+| **Senior Full Stack Video Engineer** | Kintell — WebRTC video conferencing & Twilio-based recording compositions | 2020–2021 |
+| **TV Platform Lead** | Stan — connected-TV VOD apps (Smart TVs, PlayStation), Preact/TS, EME/PlayReady DRM | 2020 |
+| **OTT Video Engineer** | SBS — launched SBS On Demand 2.0 on Telstra TV (Brightscript), Google DAI, CI/CD | 2018–2020 |
+| **Application Architect** | Switch Media — media player & Chromecast/PS4 apps for Foxtel; DRM, ABR, analytics | 2017–2018 |
+| **Earlier** | Optus · Vivant Digital · Alive Mobile · Target · Prowareness · Hewlett Packard · Cisco Systems | 2007–2017 |
+
+> Certified Scrum Master · Bachelor of Engineering, Computer Science
+
+## 🧰 Domains & technologies
 
 | Area | Technologies |
 |------|-------------|
