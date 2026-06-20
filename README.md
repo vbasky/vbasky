@@ -8,6 +8,8 @@
 ## 🚀 Featured Projects
 
 ### 🎬 [viser](https://github.com/vbasky/viser) — Video Encoding Optimizer
+[![Stars](https://img.shields.io/github/stars/vbasky/viser?style=social)](https://github.com/vbasky/viser/stargazers)
+
 A multi-codec **convex-hull optimization pipeline** that computes per-content bitrate ladders from CRF sweep trial data. It combines shot detection and complexity analysis to drive per-title, per-shot, per-segment, and per-device encoding strategies — minimizing bitrate at any quality target.
 
 > Ships BD-Rate computation, VMAF measurement, fixed-ladder comparison, chart rendering, and a browser-based comparison player.
@@ -17,6 +19,8 @@ A multi-codec **convex-hull optimization pipeline** that computes per-content bi
 📖 **[Measure, Don't Guess: Building viser →](https://medium.com/@vbasky/measure-dont-guess-building-viser-a-content-adaptive-video-encoding-optimizer-in-rust-7675edd6943a)**
 
 ### 🎧 [cathar](https://github.com/vbasky/cathar) — Audio Restoration Toolkit (Pure Rust)
+[![Stars](https://img.shields.io/github/stars/vbasky/cathar?style=social)](https://github.com/vbasky/cathar/stargazers)
+
 An audio toolkit for any recording that **restores** (denoise, de-hum, de-click, de-clip, de-reverb), **enhances** (de-ess, breath removal, voice isolation, bandwidth extension), and **levels** (LUFS + peak normalisation) — writing a clean 32-bit float WAV. Works on standalone audio (WAV, MP3, FLAC, OGG, M4A) or the audio track inside a video; video is never required.
 
 > No ffmpeg, no C/C++, no system libraries — decoding via `symphonia`, FFT via `realfft`/`rustfft`. Every effect is a plain function over `&[f32]`, so the pipeline drops straight into any Rust program.
@@ -26,6 +30,8 @@ An audio toolkit for any recording that **restores** (denoise, de-hum, de-click,
 📖 **[Catharsis for Noisy Audio →](https://medium.com/@vbasky/catharsis-for-noisy-audio-a-pure-rust-restoration-toolkit-with-no-ffmpeg-and-no-black-boxes-a6c5c38e4c14?postPublishedType=repub)**
 
 ### 🖼️ [eligo](https://github.com/vbasky/eligo) — Best-of-N Image Selection (Pure Rust)
+[![Stars](https://img.shields.io/github/stars/vbasky/eligo?style=social)](https://github.com/vbasky/eligo/stargazers)
+
 Image generators are random — eligo automates picking the best output. Give it a prompt and it **generates** `n` candidates (a pluggable `Backend`), **scores** each against the prompt (a pluggable `Scorer`), and **selects** the highest-scoring one. The smallest honest **agentic** loop: a numeric reward drives a decision.
 
 > Ships a Stable Diffusion backend on ONNX Runtime, a CLIP prompt-alignment scorer, no-reference quality scoring, and image-similarity search — with a bounded single re-roll of the worst candidate.
@@ -33,6 +39,8 @@ Image generators are random — eligo automates picking the best output. Give it
 > **Pure Rust · ONNX Runtime · CLIP · Stable Diffusion**
 
 ### 🔎 [revelo](https://github.com/vbasky/revelo) — Pure-Rust MediaInfoLib Port
+[![Stars](https://img.shields.io/github/stars/vbasky/revelo?style=social)](https://github.com/vbasky/revelo/stargazers)
+
 A safe, fast port of MediaInfoLib that reads technical and tag metadata from **177+ audio, video, image, and container formats**. A drop-in `libmediainfo` replacement (C ABI + CLI), differential-tested byte-for-byte against the MediaInfo oracle.
 
 > AAC · AC-3 · AVI · AV1 · BPG · CineForm · DTS · DV · FLAC · H.263 · JPEG · MPEG · MP4/MOV · Matroska · MPEG-PS/TS · Ogg · Opus · PNG · ProRes · VC-1 · VP8/9 · WebP · WAV · and more
@@ -42,6 +50,8 @@ A safe, fast port of MediaInfoLib that reads technical and tag metadata from **1
 📖 **[Porting 300K lines of C++/Perl to Rust: a byte-identical MediaInfo replacement →](https://medium.com/@vbasky/porting-200-000-lines-of-c-to-rust-building-a-byte-identical-mediainfo-replacement-8e9b587d469a)**
 
 ### 🗄️ [somnia](https://github.com/vbasky/somnia) — Type-safe SurrealDB ORM for Rust
+[![Stars](https://img.shields.io/github/stars/vbasky/somnia?style=social)](https://github.com/vbasky/somnia/stargazers)
+
 A typed query builder, a `#[derive(SurrealRecord)]` macro, schema generation, and Diesel-style migrations — bringing compile-time safety to SurrealDB.
 
 > 🍺 `brew install vbasky/somnia/somnia`
@@ -49,11 +59,15 @@ A typed query builder, a `#[derive(SurrealRecord)]` macro, schema generation, an
 📖 **[A Type-Safe ORM for SurrealDB That Feels Like Diesel →](https://medium.com/@vbasky/somnia-a-type-safe-orm-for-surrealdb-that-feels-like-diesel-7341d49bd5c4)**
 
 ### 🎨 [sublime-vscode-plus](https://github.com/vbasky/sublime-vscode-plus) — VS Code Colour Scheme for Sublime Text
+[![Stars](https://img.shields.io/github/stars/vbasky/sublime-vscode-plus?style=social)](https://github.com/vbasky/sublime-vscode-plus/stargazers)
+
 Brings VS Code's **Dark+** and **Light+** syntax highlighting to Sublime Text. Installable via Package Control and tested across PHP, JavaScript/Vue, Python, HTML/Blade, CSS/Sass/SCSS/Less, JSON, XML, Markdown, and YAML.
 
-> ⭐ **45 stars** — my most-starred project
+> ⭐ my most-starred project
 
 ### 📓 [patina](https://github.com/vbasky/patina) — Rust-native Interactive Notebook
+[![Stars](https://img.shields.io/github/stars/vbasky/patina?style=social)](https://github.com/vbasky/patina/stargazers)
+
 A Rust-native interactive notebook with kernel support for **Rust**, **Python**, and **JavaScript**. The entire stack — web server, kernels, wire protocol, and JavaScript engine — is written in Rust. No Jupyter, no external kernel plumbing.
 
 > Rust (evcxr) · Python (pyo3/CPython) · JavaScript (boa) · React UI · Axum
