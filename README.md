@@ -18,6 +18,17 @@ A multi-codec **convex-hull optimization pipeline** that computes per-content bi
 
 📖 **[Measure, Don't Guess: Building viser →](https://medium.com/@vbasky/measure-dont-guess-building-viser-a-content-adaptive-video-encoding-optimizer-in-rust-7675edd6943a)**
 
+### 📦 [sheathe](https://github.com/vbasky/sheathe) — Pure-Rust Media Packager
+[![Stars](https://img.shields.io/github/stars/vbasky/sheathe?style=social)](https://github.com/vbasky/sheathe/stargazers)
+
+A pure-Rust media packager at parity with **Shaka Packager** for the features production OTT actually uses. MP4 in → CMAF segments out, with DASH + HLS manifests, RFC 6381 codec strings, and multi-input ABR ladders — no ffmpeg, no GPAC, no C/C++.
+
+> Full CENC encryption matrix (`cenc` / `cens` / `cbc1` / `cbcs`), multi-DRM `pssh` (Widevine + PlayReady + Common), and crypto-period key rotation — every box differential-tested byte-for-byte against the Shaka Packager oracle and ffmpeg decrypt-verified.
+>
+> **Pure Rust · DASH / HLS / CMAF · MSRV 1.85 / edition 2024**
+
+🦀 `cargo install sheathe`
+
 ### 🎧 [cathar](https://github.com/vbasky/cathar) — Audio Restoration Toolkit (Pure Rust)
 [![Stars](https://img.shields.io/github/stars/vbasky/cathar?style=social)](https://github.com/vbasky/cathar/stargazers)
 
