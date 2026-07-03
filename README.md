@@ -29,6 +29,8 @@ A pure-Rust media packager at parity with **Shaka Packager** for the features pr
 
 🦀 `cargo install sheathe`
 
+📖 **[Packaging the World's Video in Pure Rust →](https://medium.com/@vbasky/packaging-the-worlds-video-in-pure-rust-ff1f6b884fec)**
+
 ### 🎧 [cathar](https://github.com/vbasky/cathar) — Audio Restoration Toolkit (Pure Rust)
 [![Stars](https://img.shields.io/github/stars/vbasky/cathar?style=social)](https://github.com/vbasky/cathar/stargazers)
 
