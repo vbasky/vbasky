@@ -168,8 +168,3 @@ A Rust-native interactive notebook with kernel support for **Rust**, **Python**,
 ![Linux](https://img.shields.io/badge/-Linux-E95420?logo=Linux&logoColor=white&style=flat)
 ![macOS](https://img.shields.io/badge/-macOS-A2AAAD?logo=Apple&logoColor=white&style=flat)
 ![Windows](https://img.shields.io/badge/-Windows-357EC7?logo=Windows&logoColor=white&style=flat)
-
----
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=vbasky&show_icons=true&locale=en" alt="vbasky" /></p>
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=vbasky&" alt="vbasky" /></p>
