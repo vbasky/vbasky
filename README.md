@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Vikram</h1>
-<h3 align="center">Engineering Manager · Video Streaming & Encoding · Rust & Cloud Infrastructure</h3>
+<h3 align="center">Solution Architect · Video Streaming & Encoding · Rust, .NET & Cloud Infrastructure</h3>
 
-<p align="center">Engineering manager with nearly two decades in media & streaming. I own the end-to-end Media & Digital Infrastructure for the NRL and its 16 clubs — live ingest, encoding, MAM, CDN, CMS, apps, identity and the data/ad stack — and I build video infrastructure in Rust on the side: encoding optimizers, media metadata tooling, and the cloud pipelines that move it all.</p>
+<p align="center">Solution Architect with nearly two decades in media & streaming. I own the end-to-end Media & Digital Infrastructure for the NRL and its 16 clubs — live ingest, encoding, MAM, CDN, CMS, apps, identity and the data/ad stack — and I build video infrastructure in Rust on the side: encoding optimizers, media metadata tooling, and the cloud pipelines that move it all.</p>
 
 ---
 
