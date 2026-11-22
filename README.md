@@ -1,17 +1,9 @@
 <p align="center">
-  <img src="assets/ferris.png" alt="Ferris, the Rust mascot" width="280">
-</p>
-
-<p align="center">
-  <img src="assets/rustification.svg" alt="Rustification. From the tool you run to the one you compile." width="720">
+  <img src="assets/ferris.png" alt="Ferris, the Rust mascot" width="180">
 </p>
 
 <p align="center">
   <strong>Vikram Bhaskaran</strong> · Sydney · <a href="https://www.nrl.com">NRL</a> · <a href="https://au.linkedin.com/in/vbasky">LinkedIn</a> · <a href="https://x.com/vikrambhaskar">X</a>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vbasky&show_icons=true&hide_border=true&bg_color=141210&title_color=F74C00&icon_color=F74C00&text_color=f4efe8&ring_color=F74C00" alt="Live GitHub stats">
 </p>
 
 <p align="center">Each row is a tool I replaced. The star counts are live, and the rows reorder themselves.</p>
