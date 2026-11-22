@@ -7,7 +7,9 @@
 
 ## 🚀 Featured Projects
 
-### 🎬 [viser](https://github.com/vbasky/viser) — Video Encoding Optimizer
+### Media
+
+#### 🎬 [viser](https://github.com/vbasky/viser) — Video Encoding Optimizer
 [![Stars](https://img.shields.io/github/stars/vbasky/viser?style=social)](https://github.com/vbasky/viser/stargazers)
 
 A multi-codec **convex-hull optimization pipeline** that computes per-content bitrate ladders from CRF sweep trial data. It combines shot detection and complexity analysis to drive per-title, per-shot, per-segment, and per-device encoding strategies — minimizing bitrate at any quality target.
@@ -18,7 +20,7 @@ A multi-codec **convex-hull optimization pipeline** that computes per-content bi
 
 📖 **[Measure, Don't Guess: Building viser →](https://medium.com/@vbasky/measure-dont-guess-building-viser-a-content-adaptive-video-encoding-optimizer-in-rust-7675edd6943a)**
 
-### 📦 [sheathe](https://github.com/vbasky/sheathe) — Pure-Rust Media Packager
+#### 📦 [sheathe](https://github.com/vbasky/sheathe) — Pure-Rust Media Packager
 [![Stars](https://img.shields.io/github/stars/vbasky/sheathe?style=social)](https://github.com/vbasky/sheathe/stargazers)
 
 A pure-Rust media packager at parity with **Shaka Packager** for the features production OTT actually uses. MP4 in → CMAF segments out, with DASH + HLS manifests, RFC 6381 codec strings, and multi-input ABR ladders — no ffmpeg, no GPAC, no C/C++.
@@ -31,7 +33,7 @@ A pure-Rust media packager at parity with **Shaka Packager** for the features pr
 
 📖 **[Packaging the World's Video in Pure Rust →](https://medium.com/@vbasky/packaging-the-worlds-video-in-pure-rust-ff1f6b884fec)**
 
-### 🎧 [cathar](https://github.com/vbasky/cathar) — Audio Restoration Toolkit (Pure Rust)
+#### 🎧 [cathar](https://github.com/vbasky/cathar) — Audio Restoration Toolkit (Pure Rust)
 [![Stars](https://img.shields.io/github/stars/vbasky/cathar?style=social)](https://github.com/vbasky/cathar/stargazers)
 
 An audio toolkit for any recording that **restores** (denoise, de-hum, de-click, de-clip, de-reverb), **enhances** (de-ess, breath removal, voice isolation, bandwidth extension), and **levels** (LUFS + peak normalisation) — writing a clean 32-bit float WAV. Works on standalone audio (WAV, MP3, FLAC, OGG, M4A) or the audio track inside a video; video is never required.
@@ -42,7 +44,7 @@ An audio toolkit for any recording that **restores** (denoise, de-hum, de-click,
 
 📖 **[Catharsis for Noisy Audio →](https://medium.com/@vbasky/catharsis-for-noisy-audio-a-pure-rust-restoration-toolkit-with-no-ffmpeg-and-no-black-boxes-a6c5c38e4c14?postPublishedType=repub)**
 
-### 🖼️ [eligo](https://github.com/vbasky/eligo) — Best-of-N Image Selection (Pure Rust)
+#### 🖼️ [eligo](https://github.com/vbasky/eligo) — Best-of-N Image Selection (Pure Rust)
 [![Stars](https://img.shields.io/github/stars/vbasky/eligo?style=social)](https://github.com/vbasky/eligo/stargazers)
 
 Image generators are random — eligo automates picking the best output. Give it a prompt and it **generates** `n` candidates (a pluggable `Backend`), **scores** each against the prompt (a pluggable `Scorer`), and **selects** the highest-scoring one. The smallest honest **agentic** loop: a numeric reward drives a decision.
@@ -51,7 +53,7 @@ Image generators are random — eligo automates picking the best output. Give it
 >
 > **Pure Rust · ONNX Runtime · CLIP · Stable Diffusion**
 
-### 🔎 [revelo](https://github.com/vbasky/revelo) — Pure-Rust MediaInfoLib Port
+#### 🔎 [revelo](https://github.com/vbasky/revelo) — Pure-Rust MediaInfoLib Port
 [![Stars](https://img.shields.io/github/stars/vbasky/revelo?style=social)](https://github.com/vbasky/revelo/stargazers)
 
 A safe, fast port of MediaInfoLib that reads technical and tag metadata from **177+ audio, video, image, and container formats**. A drop-in `libmediainfo` replacement (C ABI + CLI), differential-tested byte-for-byte against the MediaInfo oracle.
@@ -62,7 +64,20 @@ A safe, fast port of MediaInfoLib that reads technical and tag metadata from **1
 
 📖 **[Porting 300K lines of C++/Perl to Rust: a byte-identical MediaInfo replacement →](https://medium.com/@vbasky/porting-200-000-lines-of-c-to-rust-building-a-byte-identical-mediainfo-replacement-8e9b587d469a)**
 
-### 🗄️ [somnia](https://github.com/vbasky/somnia) — Type-safe SurrealDB ORM for Rust
+### Data
+
+#### 🧭 [ontaria](https://github.com/vbasky/ontaria) — RDF Schema and OWL toolkit
+[![Stars](https://img.shields.io/github/stars/vbasky/ontaria?style=social)](https://github.com/vbasky/ontaria/stargazers)
+
+Ontaria parses an RDF Schema or OWL ontology and looks up classes, properties, and resources. It validates instance documents, diffs two ontologies, and generates bindings and shapes from the model.
+
+> Reads Turtle, N-Triples, N-Quads, TriG, RDF/XML, and JSON-LD, plus EBUCore XML and MediaInfo JSON. Generation covers Rust, TypeScript, Go, Python, JSON Schema, SHACL, and property graphs.
+>
+> **Pure Rust · library and CLI**
+
+🦀 `cargo install --git https://github.com/vbasky/ontaria ontaria-cli`
+
+#### 🗄️ [somnia](https://github.com/vbasky/somnia) — Type-safe SurrealDB ORM for Rust
 [![Stars](https://img.shields.io/github/stars/vbasky/somnia?style=social)](https://github.com/vbasky/somnia/stargazers)
 
 A typed query builder, a `#[derive(SurrealRecord)]` macro, schema generation, and Diesel-style migrations — bringing compile-time safety to SurrealDB.
@@ -71,14 +86,25 @@ A typed query builder, a `#[derive(SurrealRecord)]` macro, schema generation, an
 
 📖 **[A Type-Safe ORM for SurrealDB That Feels Like Diesel →](https://medium.com/@vbasky/somnia-a-type-safe-orm-for-surrealdb-that-feels-like-diesel-7341d49bd5c4)**
 
-### 🎨 [sublime-vscode-plus](https://github.com/vbasky/sublime-vscode-plus) — VS Code Colour Scheme for Sublime Text
+### Desktop
+
+#### 🐣 [hatch](https://github.com/vbasky/hatch) — A menu that writes its own widgets
+[![Stars](https://img.shields.io/github/stars/vbasky/hatch?style=social)](https://github.com/vbasky/hatch/stargazers)
+
+Menu-bar apps ship a fixed set of widgets. Hatch runs a coding agent in the popover: ask in plain English, and the agent writes an extension that hot-reloads into the menu.
+
+> macOS menu bar, and a native KDE Plasma tray on Linux. Agent edits stay under `~/.hatch/extensions`, and each turn can be kept or undone from the real diff.
+>
+> **macOS and Linux**
+
+#### 🎨 [sublime-vscode-plus](https://github.com/vbasky/sublime-vscode-plus) — VS Code Colour Scheme for Sublime Text
 [![Stars](https://img.shields.io/github/stars/vbasky/sublime-vscode-plus?style=social)](https://github.com/vbasky/sublime-vscode-plus/stargazers)
 
 Brings VS Code's **Dark+** and **Light+** syntax highlighting to Sublime Text. Installable via Package Control and tested across PHP, JavaScript/Vue, Python, HTML/Blade, CSS/Sass/SCSS/Less, JSON, XML, Markdown, and YAML.
 
 > ⭐ my most-starred project
 
-### 📓 [patina](https://github.com/vbasky/patina) — Rust-native Interactive Notebook
+#### 📓 [patina](https://github.com/vbasky/patina) — Rust-native Interactive Notebook
 [![Stars](https://img.shields.io/github/stars/vbasky/patina?style=social)](https://github.com/vbasky/patina/stargazers)
 
 A Rust-native interactive notebook with kernel support for **Rust**, **Python**, and **JavaScript**. The entire stack — web server, kernels, wire protocol, and JavaScript engine — is written in Rust. No Jupyter, no external kernel plumbing.
