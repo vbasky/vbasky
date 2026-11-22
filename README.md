@@ -3,10 +3,8 @@
 </p>
 
 <p align="center">
-  Sydney · <a href="https://www.nrl.com">NRL</a> · <a href="https://au.linkedin.com/in/vbasky">LinkedIn</a> · <a href="https://x.com/vikrambhaskar">X</a>
+  Sydney · Founder, <a href="https://aeris.tv">Aeris</a> · <a href="https://au.linkedin.com/in/vbasky">LinkedIn</a> · <a href="https://x.com/vikrambhaskar">X</a>
 </p>
-
-<p align="center">Each row is a tool I replaced. The star counts are live, and the rows reorder themselves.</p>
 
 ## Featured Projects
 
@@ -39,6 +37,4 @@
 
 ## At work
 
-Since 2021 I have owned media and digital infrastructure for the [NRL](https://www.nrl.com) and its 16 clubs: live ingest, encoding, the library, the apps, and [NRL Studio](https://studio.nrl.com). 130,000 VOD assets moved onto Shaka Packager.
-
-Before that: video at Kintell, connected-TV apps at Stan, SBS On Demand on Telstra TV, and the Foxtel player at Switch Media.
+Founder of [Aeris](https://aeris.tv). Ingest, review, search, and delivery in one place, on your own infrastructure.
