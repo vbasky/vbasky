@@ -9,16 +9,27 @@
 
 ### Media
 
-#### 🎬 [viser](https://github.com/vbasky/viser) — Video Encoding Optimizer
-[![Stars](https://img.shields.io/github/stars/vbasky/viser?style=social)](https://github.com/vbasky/viser/stargazers)
+#### 🎧 [cathar](https://github.com/vbasky/cathar) — Audio Restoration Toolkit (Pure Rust)
+[![Stars](https://img.shields.io/github/stars/vbasky/cathar?style=social)](https://github.com/vbasky/cathar/stargazers)
 
-A multi-codec **convex-hull optimization pipeline** that computes per-content bitrate ladders from CRF sweep trial data. It combines shot detection and complexity analysis to drive per-title, per-shot, per-segment, and per-device encoding strategies — minimizing bitrate at any quality target.
+An audio toolkit for any recording that **restores** (denoise, de-hum, de-click, de-clip, de-reverb), **enhances** (de-ess, breath removal, voice isolation, bandwidth extension), and **levels** (LUFS + peak normalisation) — writing a clean 32-bit float WAV. Works on standalone audio (WAV, MP3, FLAC, OGG, M4A) or the audio track inside a video; video is never required.
 
-> Ships BD-Rate computation, VMAF measurement, fixed-ladder comparison, chart rendering, and a browser-based comparison player.
+> No ffmpeg, no C/C++, no system libraries — decoding via `symphonia`, FFT via `realfft`/`rustfft`. Every effect is a plain function over `&[f32]`, so the pipeline drops straight into any Rust program.
 >
-> **15 workspace crates · H.264 / H.265 / AV1 · Rust**
+> **Pure Rust · single `cargo build` · MSRV 1.85 / edition 2024**
 
-📖 **[Measure, Don't Guess: Building viser →](https://medium.com/@vbasky/measure-dont-guess-building-viser-a-content-adaptive-video-encoding-optimizer-in-rust-7675edd6943a)**
+📖 **[Catharsis for Noisy Audio →](https://medium.com/@vbasky/catharsis-for-noisy-audio-a-pure-rust-restoration-toolkit-with-no-ffmpeg-and-no-black-boxes-a6c5c38e4c14?postPublishedType=repub)**
+
+#### 🔎 [revelo](https://github.com/vbasky/revelo) — Pure-Rust MediaInfoLib Port
+[![Stars](https://img.shields.io/github/stars/vbasky/revelo?style=social)](https://github.com/vbasky/revelo/stargazers)
+
+A safe, fast port of MediaInfoLib that reads technical and tag metadata from **177+ audio, video, image, and container formats**. A drop-in `libmediainfo` replacement (C ABI + CLI), differential-tested byte-for-byte against the MediaInfo oracle.
+
+> AAC · AC-3 · AVI · AV1 · BPG · CineForm · DTS · DV · FLAC · H.263 · JPEG · MPEG · MP4/MOV · Matroska · MPEG-PS/TS · Ogg · Opus · PNG · ProRes · VC-1 · VP8/9 · WebP · WAV · and more
+>
+> 🍺 `brew install vbasky/revelo/revelo`
+
+📖 **[Porting 300K lines of C++/Perl to Rust: a byte-identical MediaInfo replacement →](https://medium.com/@vbasky/porting-200-000-lines-of-c-to-rust-building-a-byte-identical-mediainfo-replacement-8e9b587d469a)**
 
 #### 📦 [sheathe](https://github.com/vbasky/sheathe) — Pure-Rust Media Packager
 [![Stars](https://img.shields.io/github/stars/vbasky/sheathe?style=social)](https://github.com/vbasky/sheathe/stargazers)
@@ -33,16 +44,16 @@ A pure-Rust media packager at parity with **Shaka Packager** for the features pr
 
 📖 **[Packaging the World's Video in Pure Rust →](https://medium.com/@vbasky/packaging-the-worlds-video-in-pure-rust-ff1f6b884fec)**
 
-#### 🎧 [cathar](https://github.com/vbasky/cathar) — Audio Restoration Toolkit (Pure Rust)
-[![Stars](https://img.shields.io/github/stars/vbasky/cathar?style=social)](https://github.com/vbasky/cathar/stargazers)
+#### 🎬 [viser](https://github.com/vbasky/viser) — Video Encoding Optimizer
+[![Stars](https://img.shields.io/github/stars/vbasky/viser?style=social)](https://github.com/vbasky/viser/stargazers)
 
-An audio toolkit for any recording that **restores** (denoise, de-hum, de-click, de-clip, de-reverb), **enhances** (de-ess, breath removal, voice isolation, bandwidth extension), and **levels** (LUFS + peak normalisation) — writing a clean 32-bit float WAV. Works on standalone audio (WAV, MP3, FLAC, OGG, M4A) or the audio track inside a video; video is never required.
+A multi-codec **convex-hull optimization pipeline** that computes per-content bitrate ladders from CRF sweep trial data. It combines shot detection and complexity analysis to drive per-title, per-shot, per-segment, and per-device encoding strategies — minimizing bitrate at any quality target.
 
-> No ffmpeg, no C/C++, no system libraries — decoding via `symphonia`, FFT via `realfft`/`rustfft`. Every effect is a plain function over `&[f32]`, so the pipeline drops straight into any Rust program.
+> Ships BD-Rate computation, VMAF measurement, fixed-ladder comparison, chart rendering, and a browser-based comparison player.
 >
-> **Pure Rust · single `cargo build` · MSRV 1.85 / edition 2024**
+> **15 workspace crates · H.264 / H.265 / AV1 · Rust**
 
-📖 **[Catharsis for Noisy Audio →](https://medium.com/@vbasky/catharsis-for-noisy-audio-a-pure-rust-restoration-toolkit-with-no-ffmpeg-and-no-black-boxes-a6c5c38e4c14?postPublishedType=repub)**
+📖 **[Measure, Don't Guess: Building viser →](https://medium.com/@vbasky/measure-dont-guess-building-viser-a-content-adaptive-video-encoding-optimizer-in-rust-7675edd6943a)**
 
 #### 🖼️ [eligo](https://github.com/vbasky/eligo) — Best-of-N Image Selection (Pure Rust)
 [![Stars](https://img.shields.io/github/stars/vbasky/eligo?style=social)](https://github.com/vbasky/eligo/stargazers)
@@ -53,18 +64,16 @@ Image generators are random — eligo automates picking the best output. Give it
 >
 > **Pure Rust · ONNX Runtime · CLIP · Stable Diffusion**
 
-#### 🔎 [revelo](https://github.com/vbasky/revelo) — Pure-Rust MediaInfoLib Port
-[![Stars](https://img.shields.io/github/stars/vbasky/revelo?style=social)](https://github.com/vbasky/revelo/stargazers)
-
-A safe, fast port of MediaInfoLib that reads technical and tag metadata from **177+ audio, video, image, and container formats**. A drop-in `libmediainfo` replacement (C ABI + CLI), differential-tested byte-for-byte against the MediaInfo oracle.
-
-> AAC · AC-3 · AVI · AV1 · BPG · CineForm · DTS · DV · FLAC · H.263 · JPEG · MPEG · MP4/MOV · Matroska · MPEG-PS/TS · Ogg · Opus · PNG · ProRes · VC-1 · VP8/9 · WebP · WAV · and more
->
-> 🍺 `brew install vbasky/revelo/revelo`
-
-📖 **[Porting 300K lines of C++/Perl to Rust: a byte-identical MediaInfo replacement →](https://medium.com/@vbasky/porting-200-000-lines-of-c-to-rust-building-a-byte-identical-mediainfo-replacement-8e9b587d469a)**
-
 ### Data
+
+#### 🗄️ [somnia](https://github.com/vbasky/somnia) — Type-safe SurrealDB ORM for Rust
+[![Stars](https://img.shields.io/github/stars/vbasky/somnia?style=social)](https://github.com/vbasky/somnia/stargazers)
+
+A typed query builder, a `#[derive(SurrealRecord)]` macro, schema generation, and Diesel-style migrations — bringing compile-time safety to SurrealDB.
+
+> 🍺 `brew install vbasky/somnia/somnia`
+
+📖 **[A Type-Safe ORM for SurrealDB That Feels Like Diesel →](https://medium.com/@vbasky/somnia-a-type-safe-orm-for-surrealdb-that-feels-like-diesel-7341d49bd5c4)**
 
 #### 🧭 [ontaria](https://github.com/vbasky/ontaria) — RDF Schema and OWL toolkit
 [![Stars](https://img.shields.io/github/stars/vbasky/ontaria?style=social)](https://github.com/vbasky/ontaria/stargazers)
@@ -77,25 +86,7 @@ Ontaria parses an RDF Schema or OWL ontology and looks up classes, properties, a
 
 🦀 `cargo install --git https://github.com/vbasky/ontaria ontaria-cli`
 
-#### 🗄️ [somnia](https://github.com/vbasky/somnia) — Type-safe SurrealDB ORM for Rust
-[![Stars](https://img.shields.io/github/stars/vbasky/somnia?style=social)](https://github.com/vbasky/somnia/stargazers)
-
-A typed query builder, a `#[derive(SurrealRecord)]` macro, schema generation, and Diesel-style migrations — bringing compile-time safety to SurrealDB.
-
-> 🍺 `brew install vbasky/somnia/somnia`
-
-📖 **[A Type-Safe ORM for SurrealDB That Feels Like Diesel →](https://medium.com/@vbasky/somnia-a-type-safe-orm-for-surrealdb-that-feels-like-diesel-7341d49bd5c4)**
-
 ### Desktop
-
-#### 🐣 [hatch](https://github.com/vbasky/hatch) — A menu that writes its own widgets
-[![Stars](https://img.shields.io/github/stars/vbasky/hatch?style=social)](https://github.com/vbasky/hatch/stargazers)
-
-Menu-bar apps ship a fixed set of widgets. Hatch runs a coding agent in the popover: ask in plain English, and the agent writes an extension that hot-reloads into the menu.
-
-> macOS menu bar, and a native KDE Plasma tray on Linux. Agent edits stay under `~/.hatch/extensions`, and each turn can be kept or undone from the real diff.
->
-> **macOS and Linux**
 
 #### 🎨 [sublime-vscode-plus](https://github.com/vbasky/sublime-vscode-plus) — VS Code Colour Scheme for Sublime Text
 [![Stars](https://img.shields.io/github/stars/vbasky/sublime-vscode-plus?style=social)](https://github.com/vbasky/sublime-vscode-plus/stargazers)
@@ -110,6 +101,15 @@ Brings VS Code's **Dark+** and **Light+** syntax highlighting to Sublime Text. I
 A Rust-native interactive notebook with kernel support for **Rust**, **Python**, and **JavaScript**. The entire stack — web server, kernels, wire protocol, and JavaScript engine — is written in Rust. No Jupyter, no external kernel plumbing.
 
 > Rust (evcxr) · Python (pyo3/CPython) · JavaScript (boa) · React UI · Axum
+
+#### 🐣 [hatch](https://github.com/vbasky/hatch) — A menu that writes its own widgets
+[![Stars](https://img.shields.io/github/stars/vbasky/hatch?style=social)](https://github.com/vbasky/hatch/stargazers)
+
+Menu-bar apps ship a fixed set of widgets. Hatch runs a coding agent in the popover: ask in plain English, and the agent writes an extension that hot-reloads into the menu.
+
+> macOS menu bar, and a native KDE Plasma tray on Linux. Agent edits stay under `~/.hatch/extensions`, and each turn can be kept or undone from the real diff.
+>
+> **macOS and Linux**
 
 ---
 
