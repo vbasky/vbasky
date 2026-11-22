@@ -1,39 +1,43 @@
 <p align="center">
-  <img src="assets/rustification.svg" alt="Rustification. From the tool you run to the one you compile." width="820">
+  <img src="assets/rustification.svg" alt="Rustification, with Ferris. From the tool you run to the one you compile." width="820">
 </p>
 
 <p align="center">
   <strong>Vikram Bhaskaran</strong> · Sydney · <a href="https://www.nrl.com">NRL</a> · <a href="https://au.linkedin.com/in/vbasky">LinkedIn</a> · <a href="https://x.com/vikrambhaskar">X</a>
 </p>
 
-<p align="center">Each row is a tool I replaced.</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=vbasky&show_icons=true&hide_border=true&bg_color=141210&title_color=F74C00&icon_color=F74C00&text_color=f4efe8&ring_color=F74C00" alt="Live GitHub stats">
+</p>
+
+<p align="center">Each row is a tool I replaced. The star counts are live, and the rows reorder themselves.</p>
 
 ## Featured Projects
 
 ### Media
 
-| Before | After |
-| --- | --- |
-| ffmpeg's audio chain | [cathar](https://github.com/vbasky/cathar) restores a recording, levels it to LUFS, and writes the WAV. No ffmpeg. [Notes](https://medium.com/@vbasky/catharsis-for-noisy-audio-a-pure-rust-restoration-toolkit-with-no-ffmpeg-and-no-black-boxes-a6c5c38e4c14) |
-| MediaInfoLib | [revelo](https://github.com/vbasky/revelo) reads 177 formats, byte for byte with the C++ tool. [Notes](https://medium.com/@vbasky/porting-200-000-lines-of-c-to-rust-building-a-byte-identical-mediainfo-replacement-8e9b587d469a) |
-| Shaka Packager | [sheathe](https://github.com/vbasky/sheathe) packages CMAF, DASH, and HLS, including the CENC matrix. [Notes](https://medium.com/@vbasky/packaging-the-worlds-video-in-pure-rust-ff1f6b884fec) |
-| a fixed bitrate ladder | [viser](https://github.com/vbasky/viser) builds per-shot ladders for H.264, HEVC, and AV1. [Notes](https://medium.com/@vbasky/measure-dont-guess-building-viser-a-content-adaptive-video-encoding-optimizer-in-rust-7675edd6943a) |
-| ranking images by hand | [eligo](https://github.com/vbasky/eligo) generates a batch, scores it, and keeps the best. |
+| Before | After | Stars |
+| --- | --- | --- |
+| ffmpeg's audio chain | [cathar](https://github.com/vbasky/cathar) restores a recording, levels it to LUFS, and writes the WAV. No ffmpeg. [Notes](https://medium.com/@vbasky/catharsis-for-noisy-audio-a-pure-rust-restoration-toolkit-with-no-ffmpeg-and-no-black-boxes-a6c5c38e4c14) | [![stars](https://img.shields.io/github/stars/vbasky/cathar?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/cathar/stargazers) |
+| MediaInfoLib | [revelo](https://github.com/vbasky/revelo) reads 177 formats, byte for byte with the C++ tool. [Notes](https://medium.com/@vbasky/porting-200-000-lines-of-c-to-rust-building-a-byte-identical-mediainfo-replacement-8e9b587d469a) | [![stars](https://img.shields.io/github/stars/vbasky/revelo?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/revelo/stargazers) |
+| Shaka Packager | [sheathe](https://github.com/vbasky/sheathe) packages CMAF, DASH, and HLS, including the CENC matrix. [Notes](https://medium.com/@vbasky/packaging-the-worlds-video-in-pure-rust-ff1f6b884fec) | [![stars](https://img.shields.io/github/stars/vbasky/sheathe?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/sheathe/stargazers) |
+| a fixed bitrate ladder | [viser](https://github.com/vbasky/viser) builds per-shot ladders for H.264, HEVC, and AV1. [Notes](https://medium.com/@vbasky/measure-dont-guess-building-viser-a-content-adaptive-video-encoding-optimizer-in-rust-7675edd6943a) | [![stars](https://img.shields.io/github/stars/vbasky/viser?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/viser/stargazers) |
+| ranking images by hand | [eligo](https://github.com/vbasky/eligo) generates a batch, scores it, and keeps the best. | [![stars](https://img.shields.io/github/stars/vbasky/eligo?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/eligo/stargazers) |
 
 ### Data
 
-| Before | After |
-| --- | --- |
-| SurrealQL by hand | [somnia](https://github.com/vbasky/somnia) checks the queries at compile time. [Notes](https://medium.com/@vbasky/somnia-a-type-safe-orm-for-surrealdb-that-feels-like-diesel-7341d49bd5c4) |
-| an ontology in a text file | [ontaria](https://github.com/vbasky/ontaria) looks up, validates, diffs, and generates. It also reads EBUCore. |
+| Before | After | Stars |
+| --- | --- | --- |
+| SurrealQL by hand | [somnia](https://github.com/vbasky/somnia) checks the queries at compile time. [Notes](https://medium.com/@vbasky/somnia-a-type-safe-orm-for-surrealdb-that-feels-like-diesel-7341d49bd5c4) | [![stars](https://img.shields.io/github/stars/vbasky/somnia?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/somnia/stargazers) |
+| an ontology in a text file | [ontaria](https://github.com/vbasky/ontaria) looks up, validates, diffs, and generates. It also reads EBUCore. | [![stars](https://img.shields.io/github/stars/vbasky/ontaria?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/ontaria/stargazers) |
 
 ### Desktop
 
-| Before | After |
-| --- | --- |
-| Dark+ and Light+, somewhere else | [sublime-vscode-plus](https://github.com/vbasky/sublime-vscode-plus) is those colors, in Sublime Text. |
-| Jupyter | [patina](https://github.com/vbasky/patina) runs Rust, Python, and JavaScript kernels without it. |
-| a menu you configure | [hatch](https://github.com/vbasky/hatch) writes the widget when you ask, then hot-reloads it. |
+| Before | After | Stars |
+| --- | --- | --- |
+| Dark+ and Light+, somewhere else | [sublime-vscode-plus](https://github.com/vbasky/sublime-vscode-plus) is those colors, in Sublime Text. | [![stars](https://img.shields.io/github/stars/vbasky/sublime-vscode-plus?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/sublime-vscode-plus/stargazers) |
+| Jupyter | [patina](https://github.com/vbasky/patina) runs Rust, Python, and JavaScript kernels without it. | [![stars](https://img.shields.io/github/stars/vbasky/patina?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/patina/stargazers) |
+| a menu you configure | [hatch](https://github.com/vbasky/hatch) writes the widget when you ask, then hot-reloads it. | [![stars](https://img.shields.io/github/stars/vbasky/hatch?style=flat-square&label=stars&color=F74C00&labelColor=141210)](https://github.com/vbasky/hatch/stargazers) |
 
 ---
 

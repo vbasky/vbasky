@@ -2,8 +2,8 @@ name: Sort featured projects by stars
 
 on:
   schedule:
-    # 21:00 UTC is 08:00 in Sydney during daylight saving.
-    - cron: "0 21 * * *"
+    # Star badges update on each view. This reorders the rows every six hours.
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 permissions:
