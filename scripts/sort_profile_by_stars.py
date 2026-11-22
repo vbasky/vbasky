@@ -22,6 +22,7 @@ from pathlib import Path
 README = Path(__file__).resolve().parents[1] / "README.md"
 REPO = re.compile(r"https://github\.com/vbasky/([A-Za-z0-9._-]+)")
 TRAILING_RULE = re.compile(r"\n---\n(?:\n)?\Z")
+DELIMITER_CELL = re.compile(r":?-{3,}:?")
 
 
 @dataclass
@@ -141,8 +142,83 @@ def render(prefix: str, preamble: str, sections: list[Section], trailing: str, r
     return "".join(parts)
 
 
+def is_delimiter(line: str) -> bool:
+    stripped = line.strip()
+    if not stripped.startswith("|"):
+        return False
+    cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+    return bool(cells) and all(DELIMITER_CELL.fullmatch(cell) for cell in cells)
+
+
+def sort_one_table(block: list[str], stars: dict[str, int]) -> list[str]:
+    if len(block) < 3 or not is_delimiter(block[1]):
+        return block
+    rows = block[2:]
+    if not rows or any(REPO.search(row) is None for row in rows):
+        return block
+    missing = []
+    for row in rows:
+        match = REPO.search(row)
+        assert match is not None
+        if match.group(1) not in stars:
+            missing.append(match.group(1))
+    if missing:
+        raise SystemExit("Missing star counts for: " + ", ".join(missing))
+
+    def row_key(item: tuple[int, str]) -> tuple[int, int]:
+        match = REPO.search(item[1])
+        assert match is not None
+        return (-stars[match.group(1)], item[0])
+
+    ranked = sorted(enumerate(rows), key=row_key)
+    return [block[0], block[1], *[row for _, row in ranked]]
+
+
+def sort_table_rows(body: str, stars: dict[str, int]) -> str:
+    lines = body.splitlines(keepends=True)
+    output: list[str] = []
+    index = 0
+    while index < len(lines):
+        if not lines[index].lstrip().startswith("|"):
+            output.append(lines[index])
+            index += 1
+            continue
+        block: list[str] = []
+        while index < len(lines) and lines[index].lstrip().startswith("|"):
+            block.append(lines[index])
+            index += 1
+        output.extend(sort_one_table(block, stars))
+    return "".join(output)
+
+
+def section_report(body: str) -> list[tuple[str, list[str]]]:
+    sections: list[tuple[str, list[str]]] = []
+    title: str | None = None
+    repos: list[str] = []
+
+    def flush() -> None:
+        if title is not None:
+            sections.append((title, list(repos)))
+
+    for line in body.splitlines():
+        if line.startswith("### "):
+            flush()
+            title = line.strip().lstrip("#").strip()
+            repos = []
+            continue
+        if title is None:
+            continue
+        if line.startswith("#### ") or (line.lstrip().startswith("|") and not is_delimiter(line)):
+            match = REPO.search(line)
+            if match:
+                repos.append(match.group(1))
+    flush()
+    return sections
+
+
 def sort_readme(text: str, stars: dict[str, int]) -> str:
     prefix, body, rest = split_featured(text)
+    body = sort_table_rows(body, stars)
     preamble, sections, trailing = parse_body(body)
     sort_sections(sections, stars)
     return render(prefix, preamble, sections, trailing, rest)
@@ -150,8 +226,7 @@ def sort_readme(text: str, stars: dict[str, int]) -> str:
 
 def featured_repos(text: str) -> list[str]:
     _, body, _ = split_featured(text)
-    _, sections, _ = parse_body(body)
-    return [project.repo for section in sections for project in section.projects]
+    return [repo for _, repos in section_report(body) for repo in repos]
 
 
 def fetch_stars(repo: str) -> int:
@@ -192,10 +267,8 @@ def main() -> None:
     stars = {repo: fetch_stars(repo) for repo in dict.fromkeys(repos)}
     updated = sort_readme(text, stars)
     _, body, _ = split_featured(updated)
-    _, sections, _ = parse_body(body)
-    for section in sections:
-        title = section.header.strip().lstrip("#").strip()
-        order = ", ".join(f"{project.repo} ({stars[project.repo]})" for project in section.projects)
+    for title, repos in section_report(body):
+        order = ", ".join(f"{repo} ({stars[repo]})" for repo in repos)
         print(f"{title}: {order}")
     if updated == text:
         print("Order unchanged.")

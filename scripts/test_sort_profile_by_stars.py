@@ -59,6 +59,39 @@ class SortReadmeTest(unittest.TestCase):
         with self.assertRaises(SystemExit):
             sort_readme(SAMPLE, {"low": 1})
 
+    def test_sorts_table_rows_inside_each_section(self) -> None:
+        text = """## Featured Projects
+
+### Media
+
+| Before | After |
+| --- | --- |
+| old-low | [low](https://github.com/vbasky/low) stays the sentence. |
+| old-high | [high](https://github.com/vbasky/high) moves up. |
+
+### Desk
+
+| Before | After |
+| --- | --- |
+| tied first | [aa](https://github.com/vbasky/aa) keeps its place. |
+| tied second | [bb](https://github.com/vbasky/bb) follows. |
+
+---
+
+## Elsewhere
+
+| Leave | [ignored](https://github.com/vbasky/ignored) alone. |
+| --- | --- |
+| this | row |
+"""
+        stars = {"low": 1, "high": 8, "aa": 3, "bb": 3, "ignored": 100}
+        updated = sort_readme(text, stars)
+        self.assertEqual(featured_repos(updated), ["high", "low", "aa", "bb"])
+        self.assertLess(updated.index("high"), updated.index("low"))
+        self.assertLess(updated.index("aa"), updated.index("bb"))
+        self.assertLess(updated.index("## Elsewhere"), updated.index("vbasky/ignored"))
+        self.assertEqual(sort_readme(updated, stars), updated)
+
 
 if __name__ == "__main__":
     unittest.main()
