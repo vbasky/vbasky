@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Vikram Bhaskaran. Architecting media systems. Building with Rust." width="100%">
+  <img src="assets/banner.png" alt="Vikram Bhaskaran, with Ferris. Architecting media systems. Building with Rust." width="100%">
 </p>
 
 <p align="center">
