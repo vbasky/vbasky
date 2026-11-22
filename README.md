@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="assets/rustification.svg" alt="Rustification, with Ferris. From the tool you run to the one you compile." width="820">
+  <img src="assets/ferris.png" alt="Ferris, the Rust mascot" width="280">
+</p>
+
+<p align="center">
+  <img src="assets/rustification.svg" alt="Rustification. From the tool you run to the one you compile." width="720">
 </p>
 
 <p align="center">
