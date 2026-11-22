@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/ferris.png" alt="Ferris, the Rust mascot" width="180">
+  <img src="assets/banner.png" alt="Vikram Bhaskaran. Architecting media systems. Building with Rust." width="100%">
 </p>
 
 <p align="center">
-  <strong>Vikram Bhaskaran</strong> · Sydney · <a href="https://www.nrl.com">NRL</a> · <a href="https://au.linkedin.com/in/vbasky">LinkedIn</a> · <a href="https://x.com/vikrambhaskar">X</a>
+  Sydney · <a href="https://www.nrl.com">NRL</a> · <a href="https://au.linkedin.com/in/vbasky">LinkedIn</a> · <a href="https://x.com/vikrambhaskar">X</a>
 </p>
 
 <p align="center">Each row is a tool I replaced. The star counts are live, and the rows reorder themselves.</p>
